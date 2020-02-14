@@ -30,5 +30,7 @@
     <None Include="..\Inno_DVSeck\DVSeck.ico" />
     <None Include="LICENSE" />
     <None Include="README.md" />
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
   </ItemGroup>
 </Project>

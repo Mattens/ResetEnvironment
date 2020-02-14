@@ -190,6 +190,8 @@ copy $(TargetPath) J:\TacSetups
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Inno_DVSeck\DVSeck.ico" />
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
     <None Include="LICENSE" />
     <None Include="README.md" />
   </ItemGroup>
