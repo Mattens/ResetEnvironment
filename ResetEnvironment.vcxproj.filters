@@ -28,5 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Inno_DVSeck\DVSeck.ico" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
   </ItemGroup>
 </Project>
