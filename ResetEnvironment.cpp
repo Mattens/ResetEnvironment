@@ -36,7 +36,7 @@ int APIENTRY wWinMain ( _In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstan
             0,
             ( LPARAM ) L"Environment",
             SMTO_ABORTIFHUNG,
-            5000,
+            6000,
             ( PDWORD_PTR ) & dwReturnValue
         );
     
