@@ -28,17 +28,18 @@ int APIENTRY wWinMain ( _In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstan
 
     //SendMessageW ( HWND_BROADCAST, WM_SETTINGCHANGE, 0, ( LPARAM ) L"Environment" );
 
-    ok =
-        SendMessageTimeoutW
-        (
-            HWND_BROADCAST,
-            WM_SETTINGCHANGE,
-            0,
-            ( LPARAM ) L"Environment",
-            SMTO_ABORTIFHUNG,
-            6000,
-            ( PDWORD_PTR ) & dwReturnValue
-        );
+    ok
+        =
+            SendMessageTimeoutW
+            (
+                HWND_BROADCAST,
+                WM_SETTINGCHANGE,
+                0,
+                ( LPARAM ) L"Environment",
+                SMTO_ABORTIFHUNG,
+                6000,
+                ( PDWORD_PTR ) & dwReturnValue
+            );
     
     return 0;
 
