@@ -13,7 +13,7 @@
   |---------------------------------------------------------------------|
   |                                                                     |
   |  created:        09.12.2015 se                                      |
-  |  last modified:  13.07.2019 se                                      |
+  |  last modified:  29.08.2021 se                                      |
   |                                                                     |
   |---------------------------------------------------------------------|*/
 
@@ -39,8 +39,11 @@ int APIENTRY wWinMain ( _In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstan
                 SMTO_ABORTIFHUNG,
                 6000,
                 ( PDWORD_PTR ) & dwReturnValue
-            );
+            )
+            !=
+            0
+    ;
     
-    return 0;
+    return !ok;
 
 }
