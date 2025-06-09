@@ -13,18 +13,17 @@
   |---------------------------------------------------------------------|
   |                                                                     |
   |  created:        09.12.2015 se                                      |
-  |  last modified:  29.08.2021 se                                      |
+  |  last modified:  09.06.2025 se                                      |
   |                                                                     |
   |---------------------------------------------------------------------|*/
 
 #include "StdAfx.h"
 
-
 int APIENTRY wWinMain ( _In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPWSTR lpCmdLine, _In_ int nCmdShow )
 {
 
-    DWORD   dwReturnValue = 0;
-    BOOL    ok;
+    DWORD       dwReturnValue = 0;
+    LRESULT     ok;
 
     //SendMessageW ( HWND_BROADCAST, WM_SETTINGCHANGE, 0, ( LPARAM ) L"Environment" );
 
@@ -44,6 +43,6 @@ int APIENTRY wWinMain ( _In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstan
             0
     ;
     
-    return !ok;
+    return ok == false;
 
 }
